@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    $('#button').on('click', function() {
-        alert('hello frontend');
-    });
+    $("h1").addClass("selected");
 
 });
