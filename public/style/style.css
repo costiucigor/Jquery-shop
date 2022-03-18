@@ -1,6 +1,7 @@
 .selected {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    margin-top: 50vh;
-    font-size: 10vw;
+    border: 2px solid red;
+}
+
+.green {
+    color: green;
 }
