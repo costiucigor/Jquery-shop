@@ -5,3 +5,25 @@
 .green {
     color: green;
 }
+
+.text_box {
+    width: 400px;
+    display: block;
+    background-color: brown;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.focus {
+    border: 2px solid #1564C0;
+    box-shadow: 0px 1px 25px #64B5F6;
+}

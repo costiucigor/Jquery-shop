@@ -1,29 +1,36 @@
 $(document).ready(function() {
 
-    // methods of chosing elements
-    // tags by parent
-    //$(".example").parent()
-    //cloest element by id and tag example
-    //$("li#second_list_item").closest("ul").addClass("selected");
-    //$('#second_list_item').closest("li").addClass("selected");
-    //$(".green").closest("li").addClass("selected");
+    $("#button_1").on("click", function() {
+        $(this).toggleClass("orange")
+    })
 
-    //parents
-    //$("#second_list_item").parents().addClass("selected");
-    //parent 
-    //$("#second_list_item").parent().addClass("selected");
+    $("#testArea").on("mouseenter", function() {
+        $(this).toggleClass("orange");
+    });
 
-    //find
-    //$("ul").find(".green").hide();
+    $("#testArea").on("mouseleave", function() {
+        $(this).toggleClass("orange");
+    });
 
-    //prev
-    //$(".green").prev().addClass("selected");
+    $("#inputName").on("focus", function() {
+        $(this).toggleClass("focus");
+    });
 
-    //next
-    //$("#second_list_item").next().addClass("selected");
+    $("#inputName").on("blur", function() {
+        $(this).removeClass("focus");
+    });
 
-    //siblings
-    $("#second_list_item").siblings(".green").addClass("selected");
+    $("#inputName").on("keyup", function() {
+        //alert("hello world")
+        $("#textHolder").text($(this).val())
+    });
 
+    //each key has its own id
+    $("#inputName").on("keyup", function(event) {
+        if (event.which == 27 /* escape */ ) {
+            //alert("ESC!");
+            $("#textHolder").text("")
+        }
+    });
 
 });
