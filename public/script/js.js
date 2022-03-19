@@ -14,10 +14,14 @@ $(document).ready(function() {
         numberTwo = parseInt(numberTwo);
 
 
-        if (isNaN(numberOne, numberTwo)) {
-            numberOne = 0
-            numberTwo = 0
+        if (Number.isNaN(numberOne)) {
+            numberOne = 0;
         };
+
+        if (Number.isNaN(numberTwo)) {
+            numberTwo = 0;
+        };
+
 
         summ = numberOne + numberTwo;
 
