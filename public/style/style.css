@@ -1,15 +1,6 @@
-.selected {
-    border: 2px solid red;
-}
-
-.green {
-    color: green;
-}
-
-.textbox {
+#testBox {
     width: 400px;
     display: block;
-    background-color: #e0e0e0;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
