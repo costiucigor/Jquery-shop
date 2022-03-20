@@ -15,18 +15,66 @@
 </head>
 
 <body>
-    <div id="imgHolder" class="imgHolder">
-        <img src="img/blackBMW.png" alt="auto">
-    </div>
-    <div id="colorsSelector" class="colorsSelector">
-        <div class="colorItem colorBlue" data-img-path="img/blueBMW.PNG"></div>
-        <div class="colorItem colorWhite" data-img-path="img/whiteBMW.PNG"></div>
-        <div class="colorItem colorBlack" data-img-path="img/blackBMW.PNG"></div>
-    </div>
 </body>
 <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<div id="imgHolder" class="imgHolder">
+    <img src="img/blackBMW.png" alt="Auto">
+
+    <div class="model_sumary">
+        <div class="model_name">BMW E34</div>
+        <div class="model_specs" id="modelSpecs">3.8 - M package</div>
+        <div class="model_price" id="modelPrice"></div>
+        <div class="model_price" id="modelPriceUSD"></div>
+        <div class="button">Order</div>
+    </div>
+</div>
+<form id="autoForm">
+    <h2>Customize for yourself</h2>
+    <div class="row">
+        <div class="col-1-of-3">
+            <h4>Enigne</h4>
+            <div class="form_block">
+                <input type="radio" name="engine" id="engine1400" value="624900" checked>
+                <label for="engine1400">1.4l (100 h.p)</label>
+            </div>
+            <div class="form-block">
+                <input type="radio" name="engine" id="engine1600" value="749900">
+                <label for="engine1600">1.6l (123 h.p)</label>
+            </div>
+        </div>
+        <div class="col-1-of-3">
+            <h4>Gear box</h4>
+            <div class="form_block">
+                <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+                <label for="transmission6MT">Mechanical, 6 gears (6MT)</label>
+            </div>
+            <div class="form_block">
+                <input type="radio" name="transmission" id="transmission6AT" value="125000">
+                <label for="transmission6AT">Automatical, 6 gears (6AT)</label>
+            </div>
+        </div>
+        <div class="col-1-of-3">
+            <h4>Aditionals</h4>
+            <div class="form_block">
+                <input type="radio" name="package" id="packageActive" value="0" checked>
+                <label for="transmission6MT">Active</label>
+            </div>
+            <div class="form_block">
+                <input type="radio" name="package" id="packageActivePlus" value="85000">
+                <label for="transmission6AT">Active Plus</label>
+            </div>
+        </div>
+        <h4>Colours</h4>
+        <div class="form_block">
+            <div id="colorsSelector" class="colorsSelector">
+                <div class="colorItem colorBlack" data-img-path="img/blackBMW.png"></div>
+                <div class="colorItem colorBlue" data-img-path="img/blueBMW.png"></div>
+                <div class="colorItem colorWhite" data-img-path="img/whiteBMW.png"></div>
+            </div>
+        </div>
+</form>
 <script src="libs/jquery/jquery-3.6.0.js"></script>
 <script src="script/js.js" async defer></script>
 

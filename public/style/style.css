@@ -6,6 +6,7 @@
 
 .colorItem.colorBlue {
     float: left;
+    margin-left: 12vw;
     padding: 20px;
     background-color: blue;
 }
