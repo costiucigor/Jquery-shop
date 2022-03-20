@@ -1,15 +1,25 @@
-#testBox {
-    width: 400px;
-    display: block;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    padding: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#colorsSelector {
+    background-color: gray;
+    padding: 80px;
+    margin-top: 200px;
 }
 
-.greenBg {
-    background-color: #43A047;
+.colorItem.colorBlue {
+    float: left;
+    padding: 20px;
+    background-color: blue;
+}
+
+.colorItem.colorBlack {
+    float: left;
+    margin-left: 12vw;
+    padding: 20px;
+    background-color: black;
+}
+
+.colorItem.colorWhite {
+    float: left;
+    margin-left: 12vw;
+    padding: 20px;
+    background-color: aliceblue;
 }
